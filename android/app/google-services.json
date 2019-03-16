@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "112092339474",
+    "firebase_url": "https://winerp-vn.firebaseio.com",
+    "project_id": "winerp-vn",
+    "storage_bucket": "winerp-vn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:112092339474:android:a399f48344b052bc",
+        "android_client_info": {
+          "package_name": "com.winerp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "112092339474-365q0gd4909pu0b5o5eks9lhn2n6duju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6c3DxmQ_FZ830HRAqpIaQixZ2-SSnSHk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
