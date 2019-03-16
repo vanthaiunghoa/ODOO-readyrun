@@ -156,17 +156,14 @@ dependencies {
     implementation project(':react-native-cookies')
     implementation project(':react-native-config')
     // This should be here already
-    //implementation project(':react-native-firebase')6
+    
 
     // Firebase dependencies
     implementation "com.google.android.gms:play-services-base:15.0.1"
     implementation "com.google.firebase:firebase-core:16.0.1"
     implementation "com.google.firebase:firebase-messaging:17.1.0"
 
-    //implementation project(':react-native-svg')
-    //implementation project(':react-native-restart')
-    //implementation project(':react-native-config')
-    //implementation project(':react-native-cookies')
+    
     implementation project(':react-native-vector-icons')
     implementation project(':react-native-gesture-handler')
     implementation fileTree(dir: "libs", include: ["*.jar"])

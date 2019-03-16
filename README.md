@@ -1,4 +1,25 @@
-project use library:
+để chạy được project cũ:
+add tất cả các thư viện bên dưới:
++copy fire google sevirse bên project cũ qua.
++setup lại file android/app/build.gradle.
++sữa lại đường dẫn android/setting.gradle.
++sữa src/routers/index.js:
+{
+   const AppSwitchNavigation = createSwitchNavigator(
+    {
+        AuthLoadingScreen: screens.AuthLoadingScreen,
+        AuthenticationStack,
+        ApplicationStack
+    },
+    {
+        initialRouteName: 'AuthLoadingScreen'
+    }
+  );
+   export const AppContainer = createAppContainer(AppSwitchNavigation);
+}
+(nhớ sữa chỗ app.js lại thành <container />)
+
+
    "metro": "^0.53.0",
     "moment": "^2.24.0",
     "react": "16.6.3",
