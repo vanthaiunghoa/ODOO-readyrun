@@ -8,7 +8,6 @@ import com.avishayil.rnrestart.ReactNativeRestartPackage;
 import io.invertase.firebase.RNFirebasePackage;
 import com.psykar.cookiemanager.CookieManagerPackage;
 import com.lugg.ReactNativeConfig.ReactNativeConfigPackage;
-//import com.psykar.cookiemanager.CookieManagerPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
@@ -36,7 +35,6 @@ public class MainApplication extends Application implements ReactApplication {
             new RNFirebasePackage(),
             new CookieManagerPackage(),
             new ReactNativeConfigPackage(),
-            //new CookieManagerPackage(),
             new VectorIconsPackage(),
             new RNGestureHandlerPackage()
       );

@@ -104,13 +104,13 @@ class MessagesScreen extends React.Component {
                     }));
                 } else {
                     setTimeout(() => {
-                        Alert.alert('Thông báo', payload.data.msg);
+                        Alert.alert('Thông bá0', payload.data.msg);
                     }, 500);
                 }
             })
             .catch(error => {
                 setTimeout(() => {
-                    Alert.alert('Thông báo', error.message);
+                    Alert.alert('Thông bá0', error.message);
                 }, 500);
             });
     }

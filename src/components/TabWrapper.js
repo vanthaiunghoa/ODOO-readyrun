@@ -58,7 +58,7 @@ export default class TabWrapper extends React.Component {
     }
 
     renderTabBar(props) {
-        const inputRange = props.navigationState.routes.map((x, i) => i);
+        const inputRange = props.navigationState.routes.map((x, i) => x);
 
         return (
             <View style={styles.tabBar}>

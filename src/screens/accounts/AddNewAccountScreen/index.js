@@ -70,7 +70,7 @@ class AddNewAccountScreen extends React.Component {
     login() {
         const { domain, email, password } = this.state;
 
-        const existAccount = this.props.AUTH.accountList.filter(item => item.domain === domain);
+        const existAccount = this.props.AUTH.accountList.filter(item => item.email === email);
 
         if (existAccount.length === 0) {
             this.setState({ isLoading: true }, () => {

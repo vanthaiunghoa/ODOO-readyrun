@@ -43,3 +43,11 @@ add tất cả các thư viện bên dưới:
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0",
     "socket.io-client": "^2.2.0"
+
+    các lỗi đã được fix:
+    +fix lỗi ở trên cho app chạy được ,ahihi
+    +fix lỗi không hiển thị icon
+
+    các lỗi cần fix:
+    +load lại tất cả dữ liệu khi ra vào messages
+    +đăng nhập hoặc thoát ra phải khởi động lại ứng dụng
