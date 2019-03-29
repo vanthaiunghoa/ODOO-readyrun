@@ -203,7 +203,7 @@ class SignInScreen extends React.Component {
                         style={{ marginTop: 25 }}
                     />
 
-                    <View style={styles.createAccount}>
+                    {/* <View style={styles.createAccount}>
                         <Text style={styles.text}>Bạn đã có tài khoản chưa?</Text>
                         <AuthButton
                             title='Tạo tài khoản mới'
@@ -214,7 +214,7 @@ class SignInScreen extends React.Component {
 
                             style={{ marginTop: 10 }}
                         />
-                    </View>
+                    </View> */}
                 </KeyboardAvoidingView>
             </ScreenWrapper>
         );

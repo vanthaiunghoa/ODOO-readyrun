@@ -101,7 +101,7 @@ class InboxScreen extends React.Component {
         this.props.inboxActions.setReadInbox(item.id);
         this.props.navigation.navigate('MessagesScreen', { id: item.id, title: item.title });
     }
-
+    //làm mới tin nhắn chỗ này
     onRefreshMessages() {
         this.getNewData();
     }
@@ -170,7 +170,7 @@ class InboxScreen extends React.Component {
                     renderItem={
                         ({ item, index }) => this.renderMessageItem(messageList, item, index)
                     }
-                    onRefresh={this.onRefreshMessages}
+                    //onRefresh={this.onRefreshMessages}
                     refreshing={this.state.isRefreshMessages}
                     contentContainerStyle={styles.list}
                     showsVerticalScrollIndicator={false}
@@ -206,7 +206,7 @@ class InboxScreen extends React.Component {
                     renderItem={
                         ({ item, index }) => this.renderMessageItem(messageList, item, index)
                     }
-                    onRefresh={this.onRefreshMessages}
+                    //onRefresh={this.onRefreshMessages}
                     refreshing={this.state.isRefreshMessages}
                     contentContainerStyle={styles.list}
                     showsVerticalScrollIndicator={false}

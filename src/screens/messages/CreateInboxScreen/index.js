@@ -3,7 +3,7 @@ import {
     StyleSheet,
     FlatList,
     View,
-    ActivityIndicator,
+    ActivityIndicator,//cái này là biểu tượng load lại nè
     TouchableOpacity,
     Alert
 } from 'react-native';
@@ -211,7 +211,7 @@ class CreateInboxScreen extends React.Component {
                     this.state.isLoading
                         ?
                         <View style={styles.loading}>
-                            <ActivityIndicator />
+                           <ActivityIndicator />
                         </View>
                         :
                         this.renderList(this.state.accountList, this.state.searchText)

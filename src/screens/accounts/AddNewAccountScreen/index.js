@@ -87,21 +87,25 @@ class AddNewAccountScreen extends React.Component {
                         }
 
                         setTimeout(() => {
-                            Alert.alert(
-                                'Thông báo',
-                                'Ứng dụng cần được khởi động lại',
-                                [
-                                    { text: 'Khởi động lại', onPress: () => RNRestart.Restart() }
-                                ],
-                                { cancelable: false }
-                            );
+                         RNRestart.Restart();
                         }, 500);
+                        //code cũ
+                        // setTimeout(() => {
+                        //     Alert.alert(
+                        //         'Thông báo',
+                        //         'Ứng dụng cần được khởi động lại',
+                        //         [
+                        //             { text: 'Khởi động lại', onPress: () => RNRestart.Restart() }
+                        //         ],
+                        //         { cancelable: false }
+                        //     );
+                        // }, 500);
                     })
                     .catch(error => {
                         this.setState({ isLoading: false }, () => {
                             setTimeout(() => {
                                 Alert.alert('Thông báo', error.message);
-                            }, 500);
+                            }, 5);
                         });
                     });
             });

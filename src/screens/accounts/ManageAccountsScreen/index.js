@@ -3,7 +3,7 @@ import {
     StyleSheet,
     FlatList,
     View,
-    Alert
+    Alert,  
 } from 'react-native';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -25,6 +25,10 @@ const styles = StyleSheet.create({
     },
     buttons: {
         paddingVertical: 30
+    },
+    touchStyle:{
+        marginTop: 15,
+
     }
 });
 
@@ -48,37 +52,25 @@ class ManageAccountsScreen extends React.PureComponent {
         if (accountIndex === this.props.AUTH.currentAccountIndex) return;
 
         this.props.authActions.changeAccount(accountIndex);
-
+//đã sữa
         setTimeout(() => {
-            Alert.alert(
-                'Thông báo',
-                'Ứng dụng cần được khởi động lại',
-                [
-                    { text: 'Khởi động lại', onPress: () => RNRestart.Restart() }
-                ],
-                { cancelable: false }
-            );
-        }, 500);
+            RNRestart.Restart()
+        }, 5);
     }
 
     addNewAccount() {
         this.props.navigation.navigate('AddNewAccountScreen');
     }
 
-    logout() {
-        this.props.authActions.logout();
 
+    logout(){
+        this.props.authActions.logout();
+        //đã sữa
         setTimeout(() => {
-            Alert.alert(
-                'Thông báo',
-                'Ứng dụng cần được khởi động lại',
-                [
-                    { text: 'Khởi động lại', onPress: () => RNRestart.Restart() }
-                ],
-                { cancelable: false }
-            );
-        }, 500);
+            RNRestart.Restart() ;
+        }, 5);
     }
+
 
     clickLeftButton() {
         this.props.navigation.goBack();
@@ -165,9 +157,13 @@ class ManageAccountsScreen extends React.PureComponent {
                         backgroundColor='#E9EDF1'
                         borderColor='#D1D4D8'
                         onPress={this.logout}
+                        
+                        
 
                         style={{ marginTop: 15 }}
                     />
+
+        
                 </View>
             </ScreenWrapper>
         );
